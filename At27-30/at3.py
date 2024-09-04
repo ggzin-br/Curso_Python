@@ -11,7 +11,7 @@ while True:
         saida[bool(not (io ^ -1) )] # Ele vai testar este caso antes
         1/io # Depois ele vai ver se é zero
     except ZeroDivisionError: # Caso for 0, dará o erro de divisão por 0
-        zeros += bool(not io)
+        zeros += 1
     except IndexError: # Caso o bool -> True ele vai quebrar o index
         break # O vetor tem até o 0 e eu acesso o "-1" == "1"
         
