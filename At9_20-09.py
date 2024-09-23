@@ -32,10 +32,12 @@ class Carro(Veiculo):
         self.__preco = preco
 
 class Bicicleta(Veiculo):
+    ## Atributos
     def __init__(self, marca:str, tipo: str) -> None:
         self._marca = marca
         self._tipo = tipo
     
+    ## Métodos
     def info(self):
         print(
         f"""
